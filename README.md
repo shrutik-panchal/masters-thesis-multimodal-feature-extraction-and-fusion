@@ -12,7 +12,7 @@ The work examines representation learning pipelines and feature-level fusion str
 - `thesis/` contains the final submitted Master’s thesis in PDF format  
 - `notebooks/` contains experimental and exploratory Jupyter notebooks used during the research  
 - `code/` contains supporting scripts for data preprocessing, feature extraction, and model experimentation  
-- `docs/` contains additional notes and references where applicable  
+ 
 
 ## Notes
 The code included in this repository reflects the exploratory nature of applied academic research. Due to dataset licensing constraints, environment differences, and hardware limitations, full reproducibility is not guaranteed. This repository is intended for transparency and reference purposes rather than production use.

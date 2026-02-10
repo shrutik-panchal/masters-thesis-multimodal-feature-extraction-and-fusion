@@ -12,7 +12,7 @@ The work examines representation learning pipelines and feature-level fusion str
 - `thesis/` contains the final submitted Master’s thesis in PDF format  
 - `notebooks/` contains experimental and exploratory Jupyter notebooks used during the research  
 - `data/` contains data for  data preprocessing, feature extraction, and model experimentation  
-- `data/montage-image-example` examples of montage images created during preprocessing
+- `data/montage-image-example` examples of montage image created during preprocessing
 
 ## Notebooks and purpose
 
@@ -24,7 +24,7 @@ The original NuScenes dataset is organized at the scene level, which makes direc
 Point Cloud Model
 This model uses engineered features extracted from raw LiDAR and radar point clouds rather than operating directly on full point sets. For each sample, statistical summaries such as coordinate-wise sums and aggregated surface normal information are computed from LiDAR and multi-view radar sensors. These features are concatenated into a fixed-length vector and passed through a deep fully connected network with batch normalization and dropout. The model serves as a lightweight baseline to evaluate how much discriminative power can be obtained from compressed geometric representations of point cloud data.
 
-### 03 - Image-based Model (Camera Modality)
+### 03 - Image-based Model
 Image Model
 The image-based model processes RGB camera inputs using a convolutional neural network composed of standard and depthwise separable convolutions with residual connections. The architecture progressively extracts spatial features from 128×128 images and aggregates them using global average pooling before classification. This model captures visual scene context and acts as a unimodal reference for evaluating the contribution of camera data in isolation.
 
